@@ -1,6 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 ## Function makeCasheMatrix creates a wrapper around matrix passed
 ## to this function as x, additional functionality added is caching
 ## of matrix inverse, use function set to initialize or change the matrix
@@ -25,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Function which complements matrix caching wrapper, this function
-## calculates inverse matrix only if it was not calculated before
+## calculates inverse matrix only if it was not calculated before, in
+## both cases it returns an inverted matrix
 
 cacheSolve <- function(x, ...) {
     inv <- x$getinverse()
